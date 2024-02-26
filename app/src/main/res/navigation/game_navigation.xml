@@ -12,8 +12,7 @@
         tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/actionGameFragment"
-            app:destination="@id/gameFragment"
-            app:enterAnim="@android:anim/accelerate_interpolator" />
+            app:destination="@id/gameFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -26,5 +25,8 @@
         <argument
             android:name="player_name"
             app:argType="string" />
+        <argument
+            android:name="player_score"
+            app:argType="integer" />
     </fragment>
 </navigation>
